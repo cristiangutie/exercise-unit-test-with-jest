@@ -1,9 +1,10 @@
+//import the function from app.js
+const { fromEuroToDollar, fromDollarToYen, fromYenToPound} = require('./app.js')
+
 describe ('Grupo de casos función de conversión de divisas' , () => {
 
     //euro to dollar
     test("One euro should be 1.206 dollars", function(){
-    //import the function from app.js
-    const { fromEuroToDollar } = require('./app.js')
 
     // use the function like its suppoed to be used
     const dollars = fromEuroToDollar(3.5)
@@ -17,8 +18,6 @@ describe ('Grupo de casos función de conversión de divisas' , () => {
 
     //dollar to yen
     test("One yen should be 109.55 dollars", function(){
-    //import the function from app.js
-    const { fromDollarToYen } = require('./app.js')
 
     // use the function like its suppoed to be used
     const yens = fromDollarToYen(3.5)
@@ -32,8 +31,6 @@ describe ('Grupo de casos función de conversión de divisas' , () => {
 
     //yen to pound
     test("One yen should be 0.0064 dollars", function(){
-    //import the function from app.js
-    const { fromYenToPound } = require('./app.js')
 
     // use the function like its suppoed to be used
     const pounds = fromYenToPound(3.5)
